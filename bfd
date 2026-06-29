@@ -48,4 +48,3 @@ graph TD
     class P1,P2,P3,P4 pathway;
     class Out1,Out2 danger;
     class Z final;
-```
