@@ -1,3 +1,4 @@
+```mermaid
 graph TD
     %% Base Concept
     A[حد نوسان قیمت در بورس ایران] -->|نوعی از| B(سرکوب مالی / سرکوب نرخ بازدهی)
@@ -47,3 +48,4 @@ graph TD
     class P1,P2,P3,P4 pathway;
     class Out1,Out2 danger;
     class Z final;
+```
