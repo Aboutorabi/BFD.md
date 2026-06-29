@@ -1,0 +1,49 @@
+graph TD
+    %% Base Concept
+    A[حد نوسان قیمت در بورس ایران] -->|نوعی از| B(سرکوب مالی / سرکوب نرخ بازدهی)
+
+    %% Core Mechanism
+    B --> C[ایجاد صف های خرید و فروش و کاهش شدید نقدشوندگی]
+    B --> D[تحریف سیگنال های قیمت و عدم کشف قیمت واقعی]
+
+    %% Impact on Pathway 1: Financial Liberalization
+    C & D -->|تخریب مستقیم| P1[۱. آزادسازی مالی]
+    P1 --> E[دشواری و هزینه بالای ورود و خروج از بازار]
+    E --> F[کاهش جذابیت بورس نسبت به بازارهای موازی]
+    F --> G[خروج منابع مالی از بازار سرمایه]
+
+    %% Impact on Pathway 2: Financial Deepening
+    G --> P2[۲. تعمیق مالی]
+    D -->|منحرف کردن توجه از بنیادی به کوتاه مدت| P2
+    P2 --> H[کاهش سرمایه گذاری غیرمستقیم و بلندمدت]
+    H --> I[کاهش عمق و ارزش مبادلات بازار سرمایه]
+
+    %% Impact on Pathway 3: Financial Innovation
+    B -->|کنترل دستوری قیمت ابزارهای پایه و مشتقه| P3[۳. نوآوری مالی]
+    P3 --> J[کاهش انگیزه نهادها برای عرضه ابزارهای جدید]
+    J --> K[توقف توسعه ابزارهای مشتقه و اختیار معامله Options]
+
+    %% Impact on Pathway 4: Risk Management
+    K -->|نبود ابزار پوشش ریسک| P4[۴. مدیریت ریسک]
+    D -->|عدم شفافیت در قیمت گذاری ریسک| P4
+    C -->|ایجاد اثر ربایشی، هیجان کاذب و رفتار گله ای| P4
+    P4 --> L[بروز نوسانات شدید چرخه ای و عدم امکان پایش استرس]
+    L --> M[افزایش شدید ریسک سیستمی معامله گران]
+
+    %% Ultimate Consequences (Output)
+    G & I --> Out1[کاهش شمول مالی و پناه به بازارهای نامولد/غیررسمی]
+    M --> Out2[بروز ریسک های سیستمی کلان، فرار سرمایه و بستر سازی فساد]
+
+    %% Final Target Destruction
+    Out1 & Out2 --> Z{تخریب توسعه مالی متوازن و باثبات در بلندمدت}
+
+    %% Styling
+    classDef main fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef pathway fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef danger fill:#ffcccb,stroke:#f00,stroke-width:2px;
+    classDef final fill:#ff6666,stroke:#333,stroke-width:3px;
+    
+    class A main;
+    class P1,P2,P3,P4 pathway;
+    class Out1,Out2 danger;
+    class Z final;
